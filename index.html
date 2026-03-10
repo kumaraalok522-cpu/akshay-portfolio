@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<!-- saved from url=(0182)file:///C:/Users/hp/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/E6924BCF174D3363776BF9F0BDB244562E0C8F87/transfers/2026-10/akshay_portfolio.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akshay – Finance &amp; Compliance Professional</title>
+<link href="./index_files/css2" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0d1b2a;
+    --ink: #1a2a3a;
+    --gold: #c9a84c;
+    --gold-light: #e8c97a;
+    --cream: #f5f0e8;
+    --cream2: #ede8de;
+    --white: #fafaf8;
+    --muted: #7a8a96;
+    --accent: #2e5b8a;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--white);
+    color: var(--ink);
+    overflow-x: hidden;
+  }
+
+  /* ── NOISE TEXTURE OVERLAY ── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.4;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 4rem;
+    background: rgba(13,27,42,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+  }
+
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 0.02em;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: rgba(245,240,232,0.7);
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+
+  .nav-links a:hover { color: var(--gold); }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    background: var(--navy);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-bg-pattern {
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 70% 50%, rgba(46,91,138,0.25) 0%, transparent 60%),
+      radial-gradient(circle at 20% 80%, rgba(201,168,76,0.08) 0%, transparent 40%);
+  }
+
+  .hero-lines {
+    position: absolute;
+    right: 0; top: 0; bottom: 0;
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .hero-lines::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 60px,
+      rgba(201,168,76,0.03) 60px,
+      rgba(201,168,76,0.03) 61px
+    );
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8rem 3rem 5rem 4rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(201,168,76,0.12);
+    border: 1px solid rgba(201,168,76,0.3);
+    color: var(--gold);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 0.4rem 1rem;
+    border-radius: 2px;
+    margin-bottom: 2rem;
+    width: fit-content;
+    animation: fadeUp 0.8s ease both;
+  }
+
+  .hero-name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3.5rem, 6vw, 5.5rem);
+    font-weight: 900;
+    color: var(--cream);
+    line-height: 1.0;
+    margin-bottom: 1rem;
+    animation: fadeUp 0.8s 0.1s ease both;
+  }
+
+  .hero-name span { color: var(--gold); }
+
+  .hero-title {
+    font-size: 1rem;
+    color: var(--muted);
+    font-weight: 400;
+    margin-bottom: 2rem;
+    letter-spacing: 0.02em;
+    animation: fadeUp 0.8s 0.2s ease both;
+  }
+
+  .hero-desc {
+    font-size: 0.95rem;
+    color: rgba(245,240,232,0.6);
+    line-height: 1.8;
+    max-width: 420px;
+    margin-bottom: 2.5rem;
+    animation: fadeUp 0.8s 0.3s ease both;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 1rem;
+    animation: fadeUp 0.8s 0.4s ease both;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: var(--navy);
+    padding: 0.8rem 2rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .btn-primary:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(201,168,76,0.3);
+  }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--cream);
+    padding: 0.8rem 2rem;
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid rgba(245,240,232,0.3);
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .btn-outline:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+
+  .hero-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    padding: 8rem 4rem 5rem 2rem;
+    animation: fadeUp 0.8s 0.5s ease both;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .stat-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(201,168,76,0.15);
+    padding: 1.8rem 1.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+
+  .stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--gold);
+  }
+
+  .stat-card:hover {
+    background: rgba(201,168,76,0.06);
+    transform: translateY(-3px);
+    border-color: rgba(201,168,76,0.3);
+  }
+
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  /* ── CONTACT BAR ── */
+  .contact-bar {
+    background: var(--gold);
+    padding: 0.9rem 4rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--navy);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+
+  .contact-item svg { flex-shrink: 0; }
+
+  /* ── SECTIONS ── */
+  section {
+    padding: 6rem 4rem;
+  }
+
+  .section-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.8rem;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 3rem;
+    position: relative;
+  }
+
+  .section-title::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -0.8rem;
+    width: 3rem;
+    height: 3px;
+    background: var(--gold);
+  }
+
+  /* ── EXPERIENCE ── */
+  #experience { background: var(--cream); }
+
+  .exp-card {
+    background: var(--white);
+    border-left: 4px solid var(--gold);
+    padding: 2rem 2.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 20px rgba(13,27,42,0.06);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .exp-card:hover {
+    transform: translateX(6px);
+    box-shadow: 0 6px 30px rgba(13,27,42,0.1);
+  }
+
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .exp-company {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--navy);
+  }
+
+  .exp-duration {
+    background: var(--navy);
+    color: var(--gold);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    padding: 0.3rem 0.8rem;
+    border-radius: 2px;
+  }
+
+  .exp-role {
+    font-size: 0.85rem;
+    color: var(--accent);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  /* ── RESPONSIBILITIES ── */
+  #responsibilities { background: var(--navy); }
+  #responsibilities .section-title { color: var(--cream); }
+
+  .resp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+
+  .resp-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.3rem 1.5rem;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(201,168,76,0.12);
+    transition: all 0.3s;
+    cursor: default;
+  }
+
+  .resp-item:hover {
+    background: rgba(201,168,76,0.08);
+    border-color: rgba(201,168,76,0.3);
+    transform: translateY(-2px);
+  }
+
+  .resp-icon {
+    width: 32px;
+    height: 32px;
+    background: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 0.9rem;
+    color: var(--navy);
+    font-weight: 700;
+  }
+
+  .resp-text {
+    font-size: 0.85rem;
+    color: rgba(245,240,232,0.8);
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  /* ── SKILLS ── */
+  #skills { background: var(--cream2); }
+
+  .skills-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .skill-group-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid var(--gold);
+  }
+
+  .skill-tag {
+    display: inline-block;
+    background: var(--white);
+    border: 1px solid rgba(13,27,42,0.12);
+    color: var(--ink);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.4rem 1rem;
+    margin: 0.3rem;
+    transition: all 0.3s;
+  }
+
+  .skill-tag:hover {
+    background: var(--navy);
+    color: var(--gold);
+    border-color: var(--navy);
+  }
+
+  /* ── EDUCATION ── */
+  #education { background: var(--white); }
+
+  .edu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .edu-card {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    border: 1px solid rgba(13,27,42,0.1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+
+  .edu-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: left;
+  }
+
+  .edu-card:hover::after { transform: scaleX(1); }
+  .edu-card:hover { box-shadow: 0 8px 32px rgba(13,27,42,0.08); }
+
+  .edu-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .edu-degree {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.4rem;
+  }
+
+  .edu-board {
+    font-size: 0.8rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+  }
+
+  /* ── PERSONAL ── */
+  #personal { background: var(--navy); }
+  #personal .section-title { color: var(--cream); }
+
+  .personal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+
+  .personal-item {
+    padding: 1.5rem;
+    border: 1px solid rgba(201,168,76,0.15);
+    background: rgba(255,255,255,0.03);
+  }
+
+  .personal-key {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.4rem;
+  }
+
+  .personal-val {
+    font-size: 0.9rem;
+    color: rgba(245,240,232,0.85);
+    font-weight: 400;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #060d14;
+    padding: 2.5rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--gold);
+  }
+
+  .footer-note {
+    font-size: 0.78rem;
+    color: rgba(245,240,232,0.3);
+    letter-spacing: 0.04em;
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    #hero { grid-template-columns: 1fr; }
+    .hero-right { display: none; }
+    .hero-left { padding: 7rem 1.5rem 3rem; }
+    section { padding: 4rem 1.5rem; }
+    .contact-bar { padding: 0.9rem 1.5rem; gap: 1rem; }
+    .skills-layout { grid-template-columns: 1fr; }
+    .edu-grid { grid-template-columns: 1fr; }
+    footer { padding: 2rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Akshay</div>
+  <ul class="nav-links">
+    <li><a href="file:///C:/Users/hp/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/E6924BCF174D3363776BF9F0BDB244562E0C8F87/transfers/2026-10/akshay_portfolio.html#experience" style="color: var(--gold);">Experience</a></li>
+    <li><a href="file:///C:/Users/hp/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/E6924BCF174D3363776BF9F0BDB244562E0C8F87/transfers/2026-10/akshay_portfolio.html#responsibilities" style="">Responsibilities</a></li>
+    <li><a href="file:///C:/Users/hp/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/E6924BCF174D3363776BF9F0BDB244562E0C8F87/transfers/2026-10/akshay_portfolio.html#skills" style="">Skills</a></li>
+    <li><a href="file:///C:/Users/hp/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/E6924BCF174D3363776BF9F0BDB244562E0C8F87/transfers/2026-10/akshay_portfolio.html#education" style="">Education</a></li>
+    <li><a href="file:///C:/Users/hp/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/E6924BCF174D3363776BF9F0BDB244562E0C8F87/transfers/2026-10/akshay_portfolio.html#personal" style="">About</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-lines"></div>
+
+  <div class="hero-left">
+    <div class="hero-tag">
+      <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="5"></circle></svg>
+      Finance &amp; Compliance Professional
+    </div>
+    <h1 class="hero-name">Akshay<span>.</span></h1>
+    <p class="hero-title">GST | TDS | Income Tax | MCA | Accounting</p>
+    <p class="hero-desc">
+      Dedicated finance professional with 4 years of hands-on experience in a leading CA firm, 
+      managing end-to-end tax compliance, corporate filings, and client documentation with precision.
+    </p>
+    <div class="hero-cta">
+      <a href="file:///C:/Users/hp/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/E6924BCF174D3363776BF9F0BDB244562E0C8F87/transfers/2026-10/akshay_portfolio.html#responsibilities" class="btn-primary">View My Work</a>
+      <a href="file:///C:/Users/hp/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/E6924BCF174D3363776BF9F0BDB244562E0C8F87/transfers/2026-10/akshay_portfolio.html#personal" class="btn-outline">About Me</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number">4+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">7+</div>
+        <div class="stat-label">GST Return Types</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">3</div>
+        <div class="stat-label">Software Platforms</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">CA</div>
+        <div class="stat-label">Firm Background</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT BAR -->
+<div class="contact-bar">
+  <a href="tel:9671965649" class="contact-item">
+    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.0 1.17 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"></path></svg>
+    9671965649
+  </a>
+  <a href="mailto:akshayk38623@gmail.com" class="contact-item">
+    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+    akshayk38623@gmail.com
+  </a>
+  <span class="contact-item">
+    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+    Sonipat, Haryana – 131028
+  </span>
+</div>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-label">Work History</div>
+  <h2 class="section-title">Professional Experience</h2>
+
+  <div class="exp-card reveal visible">
+    <div class="exp-header">
+      <div class="exp-company">A.G.M.S &amp; Co. — CA Firm</div>
+      <div class="exp-duration">4 Years</div>
+    </div>
+    <div class="exp-role">GST &amp; Tax Compliance Specialist</div>
+    <p style="font-size:0.88rem;color:#555;line-height:1.7;">
+      Comprehensive handling of GST compliance, TDS returns, Income Tax matters, 
+      MCA filings, and client documentation. Managed end-to-end tax lifecycle 
+      for multiple clients across industries including GST registrations, 
+      reconciliations, refund processing, and corporate incorporations.
+    </p>
+  </div>
+</section>
+
+<!-- RESPONSIBILITIES -->
+<section id="responsibilities">
+  <div class="section-label" style="color:rgba(201,168,76,0.6);">What I Do</div>
+  <h2 class="section-title">Key Responsibilities</h2>
+
+  <div class="resp-grid">
+    <div class="resp-item reveal visible">
+      <div class="resp-icon">₹</div>
+      <div class="resp-text">GST Return Filing – GSTR-1, GSTR-3B, GSTR-4, GSTR-6, GSTR-7, GSTR-10</div>
+    </div>
+    <div class="resp-item reveal visible">
+      <div class="resp-icon">⚖</div>
+      <div class="resp-text">2B Reconciliation and GST Compliance Management</div>
+    </div>
+    <div class="resp-item reveal visible">
+      <div class="resp-icon">📋</div>
+      <div class="resp-text">TDS Return Filing and Compliance</div>
+    </div>
+    <div class="resp-item reveal visible">
+      <div class="resp-icon">🏦</div>
+      <div class="resp-text">Bank Reconciliation &amp; Accounting Entries</div>
+    </div>
+    <div class="resp-item reveal visible">
+      <div class="resp-icon">📦</div>
+      <div class="resp-text">E-Way Bill Generation</div>
+    </div>
+    <div class="resp-item reveal visible">
+      <div class="resp-icon">📝</div>
+      <div class="resp-text">Debit Note &amp; Credit Note Preparation</div>
+    </div>
+    <div class="resp-item reveal visible">
+      <div class="resp-icon">↩</div>
+      <div class="resp-text">Inverted Duty Refund Processing</div>
+    </div>
+    <div class="resp-item reveal visible">
+      <div class="resp-icon">✅</div>
+      <div class="resp-text">GST Registration &amp; LUT Filing</div>
+    </div>
+    <div class="resp-item reveal visible">
+      <div class="resp-icon">🪪</div>
+      <div class="resp-text">PAN Applications – Individual &amp; HUF</div>
+    </div>
+    <div class="resp-item reveal visible">
+      <div class="resp-icon">🌐</div>
+      <div class="resp-text">Import Export Code (IEC) Registration</div>
+    </div>
+    <div class="resp-item reveal visible">
+      <div class="resp-icon">🏭</div>
+      <div class="resp-text">MSME Registration</div>
+    </div>
+    <div class="resp-item reveal visible">
+      <div class="resp-icon">™</div>
+      <div class="resp-text">Trademark Registration</div>
+    </div>
+    <div class="resp-item reveal visible">
+      <div class="resp-icon">🚀</div>
+      <div class="resp-text">Startup Registration</div>
+    </div>
+    <div class="resp-item reveal visible">
+      <div class="resp-icon">📄</div>
+      <div class="resp-text">Rent Agreement, Affidavit for HUF, Partnership Deed Preparation</div>
+    </div>
+    <div class="resp-item reveal visible">
+      <div class="resp-icon">🏢</div>
+      <div class="resp-text">Private Limited Company Incorporation (MCA)</div>
+    </div>
+    <div class="resp-item reveal visible">
+      <div class="resp-icon">👤</div>
+      <div class="resp-text">Director KYC &amp; MCA Compliance</div>
+    </div>
+    <div class="resp-item reveal visible">
+      <div class="resp-icon">💰</div>
+      <div class="resp-text">ITR Filing – Income Tax Returns</div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label">Capabilities</div>
+  <h2 class="section-title">Skills &amp; Tools</h2>
+
+  <div class="skills-layout">
+    <div class="reveal visible">
+      <div class="skill-group-title">Professional Skills</div>
+      <div>
+        <span class="skill-tag">GST Compliance</span>
+        <span class="skill-tag">TDS Returns</span>
+        <span class="skill-tag">Income Tax</span>
+        <span class="skill-tag">MCA Filings</span>
+        <span class="skill-tag">Bank Reconciliation</span>
+        <span class="skill-tag">Client Handling</span>
+        <span class="skill-tag">Tax Planning</span>
+        <span class="skill-tag">Analytical Thinking</span>
+        <span class="skill-tag">Multitasking</span>
+        <span class="skill-tag">Leadership</span>
+        <span class="skill-tag">Decision Making</span>
+        <span class="skill-tag">Communication</span>
+      </div>
+    </div>
+    <div class="reveal visible">
+      <div class="skill-group-title">Software &amp; Tools</div>
+      <div>
+        <span class="skill-tag">Tally Prime</span>
+        <span class="skill-tag">Tally ERP 9</span>
+        <span class="skill-tag">Busy Accounting</span>
+        <span class="skill-tag">MS Excel</span>
+        <span class="skill-tag">MS Word</span>
+        <span class="skill-tag">MS PowerPoint</span>
+        <span class="skill-tag">GST Portal</span>
+        <span class="skill-tag">Income Tax Portal</span>
+        <span class="skill-tag">MCA Portal</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-label">Academic Background</div>
+  <h2 class="section-title">Education</h2>
+
+  <div class="edu-grid">
+    <div class="edu-card reveal visible">
+      <div class="edu-icon">🎓</div>
+      <div class="edu-degree">B.Com (General)</div>
+      <div class="edu-board" style="color:var(--accent);font-weight:600;margin-bottom:0.3rem;">IGNOU</div>
+      <div class="edu-board">Commerce</div>
+    </div>
+    <div class="edu-card reveal visible">
+      <div class="edu-icon">📚</div>
+      <div class="edu-degree">12th Grade</div>
+      <div class="edu-board" style="color:var(--accent);font-weight:600;margin-bottom:0.3rem;">CBSE Board</div>
+      <div class="edu-board">Commerce Stream</div>
+    </div>
+    <div class="edu-card reveal visible">
+      <div class="edu-icon">✏️</div>
+      <div class="edu-degree">10th Grade</div>
+      <div class="edu-board" style="color:var(--accent);font-weight:600;margin-bottom:0.3rem;">CBSE Board</div>
+      <div class="edu-board">Secondary Education</div>
+    </div>
+  </div>
+</section>
+
+<!-- PERSONAL -->
+<section id="personal">
+  <div class="section-label" style="color:rgba(201,168,76,0.6);">Personal Details</div>
+  <h2 class="section-title">About Me</h2>
+
+  <div class="personal-grid">
+    <div class="personal-item reveal visible">
+      <div class="personal-key">Father's Name</div>
+      <div class="personal-val">Satish Kumar</div>
+    </div>
+    <div class="personal-item reveal visible">
+      <div class="personal-key">Date of Birth</div>
+      <div class="personal-val">08 March 2004</div>
+    </div>
+    <div class="personal-item reveal visible">
+      <div class="personal-key">Gender</div>
+      <div class="personal-val">Male</div>
+    </div>
+    <div class="personal-item reveal visible">
+      <div class="personal-key">Nationality</div>
+      <div class="personal-val">Indian</div>
+    </div>
+    <div class="personal-item reveal visible">
+      <div class="personal-key">Marital Status</div>
+      <div class="personal-val">Unmarried</div>
+    </div>
+    <div class="personal-item reveal visible">
+      <div class="personal-key">Languages</div>
+      <div class="personal-val">Hindi, English</div>
+    </div>
+    <div class="personal-item reveal visible" style="grid-column: span 2;">
+      <div class="personal-key">Address</div>
+      <div class="personal-val">Village Dahisara (51), P.O. Janti Kalan, District Sonipat, Haryana – 131028</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-name">Akshay</div>
+  <div class="footer-note">Finance &amp; Compliance Professional · Sonipat, Haryana</div>
+  <div class="footer-note">akshayk38623@gmail.com · 9671965649</div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 60);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+
+  // Smooth nav highlight
+  const sections = document.querySelectorAll('section[id], div[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 120) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.style.color = a.getAttribute('href') === '#' + current
+        ? 'var(--gold)' : '';
+    });
+  });
+</script>
+
+
+</body></html>
